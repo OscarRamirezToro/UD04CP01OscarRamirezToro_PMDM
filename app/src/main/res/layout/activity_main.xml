@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cabecera obligatoria de configuración XML -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+    <!-- LinearLayout vertical centrado para mostrar el menú de opciones -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona un Ejercicio"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+    <!-- Título principal de la pantalla de bienvenida -->
+
+    <Button
+        android:id="@+id/btnAbrirEjercicio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 1: Formulario Login"
+        android:layout_marginBottom="16dp" />
+    <!-- Botón que servirá para navegar hacia la pantalla del Ejercicio 1 -->
+
+    <Button
+        android:id="@+id/btnAbrirEjercicio2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ejercicio 2: Alineación y Zonas" />
+    <!-- Botón que servirá para navegar hacia la pantalla del Ejercicio 2 -->
+
+</LinearLayout>
+    <!-- Fin del contenedor del menú -->

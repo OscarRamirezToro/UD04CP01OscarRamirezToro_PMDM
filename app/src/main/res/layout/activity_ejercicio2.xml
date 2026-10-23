@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración XML estándar -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+    <!-- Contenedor vertical principal -->
+
+    <!-- Fila 1: Nombre -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+        <!-- Contenedor horizontal que alinea la etiqueta Nombre y su campo -->
+
+        <TextView
+            android:id="@+id/tvEtiquetaNombre"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textSize="16sp" />
+        <!-- Etiqueta Nombre con ancho fijo de 80dp para mantener alineación -->
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textPersonName" />
+        <!-- Campo de texto que ocupa el resto del ancho horizontal disponible -->
+
+    </LinearLayout>
+    <!-- Fin fila 1 -->
+
+    <!-- Fila 2: Email -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+        <!-- Contenedor horizontal para la etiqueta Email y su campo correspondiente -->
+
+        <TextView
+            android:id="@+id/tvEtiquetaEmail"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="16sp" />
+        <!-- Etiqueta Email con el mismo ancho de 80dp para conservar la simetría -->
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textEmailAddress" />
+        <!-- Campo de entrada con teclado adaptado para correos electrónicos -->
+
+    </LinearLayout>
+    <!-- Fin fila 2 -->
+
+    <!-- Botón Acceso -->
+    <Button
+        android:id="@+id/btnAcceso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Acceso"
+        android:layout_marginBottom="24dp" />
+    <!-- Botón horizontal central de acceso -->
+
+    <!-- Fila 3: Zona 1 y Zona 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Contenedor horizontal para repartir equitativamente las dos zonas -->
+
+        <Button
+            android:id="@+id/btnZona1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zona 1"
+            android:layout_marginEnd="8dp" />
+        <!-- Botón Zona 1 con peso 1 para ocupar la mitad exacta de la fila -->
+
+        <Button
+            android:id="@+id/btnZona2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Zona 2"
+            android:layout_marginStart="8dp" />
+        <!-- Botón Zona 2 con peso 1 para ocupar la otra mitad simétrica -->
+
+    </LinearLayout>
+    <!-- Fin fila 3 -->
+
+</LinearLayout>
+    <!-- Fin del diseño del Ejercicio 2 -->

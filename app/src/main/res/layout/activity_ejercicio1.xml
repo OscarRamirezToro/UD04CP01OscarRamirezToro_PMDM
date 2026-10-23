@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Declaración XML estándar -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp">
+    <!-- Contenedor vertical centrado para todo el formulario de Login -->
+
+    <!-- Título: Login -->
+    <TextView
+        android:id="@+id/tvTituloLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="40dp" />
+    <!-- Muestra el encabezado superior 'Login' -->
+
+    <!-- Etiqueta Usuario -->
+    <TextView
+        android:id="@+id/tvEtiquetaUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:textSize="14sp"
+        android:textColor="#777777" />
+    <!-- Texto que indica el campo de usuario -->
+
+    <!-- Campo editable de Usuario -->
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="24dp" />
+    <!-- Caja de texto para ingresar el usuario -->
+
+    <!-- Etiqueta Contraseña -->
+    <TextView
+        android:id="@+id/tvEtiquetaClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:textSize="14sp"
+        android:textColor="#777777" />
+    <!-- Texto que indica el campo de contraseña -->
+
+    <!-- Campo editable de Contraseña -->
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp" />
+    <!-- Caja protegida para ingresar la contraseña con caracteres ocultos -->
+
+    <!-- Checkbox Recordar Usuario -->
+    <CheckBox
+        android:id="@+id/cbRecordarUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recordar usuario"
+        android:textSize="16sp"
+        android:layout_marginBottom="36dp" />
+    <!-- Casilla para marcar la opción de recordar sesión -->
+
+    <!-- Botón Acceder -->
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Acceder"
+        android:textSize="16sp" />
+    <!-- Botón sin funcionalidad asociada para enviar el formulario -->
+
+</LinearLayout>
+    <!-- Fin del diseño del Ejercicio 1 -->
